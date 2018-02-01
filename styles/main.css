@@ -10,9 +10,7 @@ p {
 }
 
 /* TODO: size images manually so this is not necessary */
-img {
-  max-height: 20rem;
-}
+
 
 /***************** NAV *****************/
 
@@ -23,6 +21,10 @@ nav a:hover {
 nav a {
   font-weight: bold;
   color: white;
+}
+
+nav li {
+  text-align: center;
 }
 
 .blue {
@@ -56,6 +58,10 @@ section {
   padding: 0 .75rem;
 }
 
+.item-container img {
+  max-height: 20rem;
+}
+
 h2 {
   padding-top: 1.5rem;
   font-size: 2rem;
@@ -67,4 +73,11 @@ h3 {
   font-size: 1.2rem;
   text-align: center;
   color: #2d2d2d;
+}
+
+.item-container {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
 }
