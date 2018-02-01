@@ -4,23 +4,29 @@
   <title>Winter Scarves</title>
 
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- Bootstrap CDN - CSS only -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- TODO: insert your personal Font Awesome CDN link here -->
+  <script src="https://use.fontawesome.com/5d40cd434e.js"></script>
+  
 </head>
 
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="#">Hats</a></li>
-        <li><a href="#">Gloves</a></li>
-        <li><a href="#">Scarves</a></li>
         <li class="cart-info">
           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </li>
+        <li><a href="#">Hats</a></li>
+        <li><a href="#">Gloves</a></li>
+        <li><a href="#">Scarves</a></li>
       </ul>
     </nav>
 
@@ -33,7 +39,7 @@
   </header>
 
   <main>
-    <aside>
+    <!-- <aside>
       <form>
         <label>Sign up for our mailing list:
           <input type="email" name="email">
@@ -41,38 +47,60 @@
 
         <input type="submit" value="Submit">
       </form>
-    </aside>
-
+    </aside> -->
+    <div class="row">
+      <div class="col-xs-12">
+        <form method="GET">
+          <label for="filter">Filter By:</label>
+          <select class="filter" name="filter">
+            <option value="placeholder1">Placeholder 1</option>
+            <option value="placeholder1">Placeholder 2</option>
+            <option value="placeholder1">Placeholder 3</option>
+            <option value="placeholder1">Placeholder 4</option>
+          </select>
+          <input type="submit" value="Sort" name="submit">
+        </form>
+      </div>
+    </div>
+    
     <section>
       <h2>Scarves</h2>
 
       <div class="item-container">
-        <div>
-          <h3>Reversible Plaid</h3>
-          <img src="images/reversible-plaid.jpg" alt="reversible plaid scarf">
-          <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
-          <p>26.99</p>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Reversible Plaid</h3>
+            <img src="images/reversible-plaid.jpg" alt="reversible plaid scarf">
+            <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
+            <p>26.99</p>
+          </div>
         </div>
 
-        <div>
-          <h3>Fringed Plaid</h3>
-          <img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf">
-          <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
-          <p>18.99</p>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Fringed Plaid</h3>
+            <img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf">
+            <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+            <p>18.99</p>
+          </div>
         </div>
 
-        <div>
-          <h3>Multi Color</h3>
-          <img src="images/multi-color.jpeg" alt="multi color scarf">
-          <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
-          <p>22.99</p>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Multi Color</h3>
+            <img src="images/multi-color.jpeg" alt="multi color scarf">
+            <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
+            <p>22.99</p>
+          </div>
         </div>
 
-        <div>
-          <h3>Northern Lights</h3>
-          <img src="images/northern-lights.jpg" alt="northern lights scarf">
-          <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
-          <p>29.99</p>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Northern Lights</h3>
+            <img src="images/northern-lights.jpg" alt="northern lights scarf">
+            <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
+            <p>29.99</p>
+          </div>
         </div>
 
         <div>
@@ -82,30 +110,42 @@
           <p>11.99</p>
         </div>
 
-        <div>
-          <h3>Ashby Twill</h3>
-          <img src="images/twill.jpg" alt="ashby twill scarf">
-          <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
-          <p>70.99</p>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Ashby Twill</h3>
+            <img src="images/twill.jpg" alt="ashby twill scarf">
+            <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
+            <p>70.99</p>
+          </div>
         </div>
 
-        <div>
-          <h3>Wool Cable Knit</h3>
-          <img src="images/wool-cable.jpeg" alt="wool cable knit scarf">
-          <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
-          <p>49.99</p>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Wool Cable Knit</h3>
+            <img src="images/wool-cable.jpeg" alt="wool cable knit scarf">
+            <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
+            <p>49.99</p>
+          </div>
         </div>
 
-        <div>
-          <h3>Etro Paisley-Print Silk</h3>
-          <img src="images/etro.png" alt="etro paisley print silk scarf">
-          <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
-          <p>26.99</p>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Etro Paisley-Print Silk</h3>
+            <img src="images/etro.png" alt="etro paisley print silk scarf">
+            <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
+            <p>26.99</p>
+          </div>
         </div>
-
       </div>
     </section>
   </main>
   <script src="js/script.js"></script>
+  
+   <!-- Bootstrap CDN - JS, Popper.js, and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
