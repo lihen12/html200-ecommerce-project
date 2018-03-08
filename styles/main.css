@@ -94,4 +94,12 @@ h3 {
   flex-flow: row wrap;
   text-align: center;
   justify-content: center;
+  margin: auto;
+}
+
+.item {
+  border: solid 1px black;
+  width: 80%;
+  margin: 2.5% 10%;
+  text-align: center;
 }
