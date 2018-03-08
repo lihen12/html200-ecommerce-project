@@ -9,8 +9,19 @@ p {
   color: #2d2d2d;
 }
 
+p, nav a {
+  font-size: 150%;
+}
+
+h1 {
+  font-size: 300%;
+}
+
 /* TODO: size images manually so this is not necessary */
 
+img {
+  max-width: 100%;
+}
 
 /***************** NAV ****************/
 
@@ -33,23 +44,30 @@ nav li {
 
 /**************** HERO *****************/
 
-header img {
-  max-height: 6rem;
-}
-
 h1 .logo-w {
   font-size: 3.5rem;
 }
 
 /**************** ASIDE ****************/
 
+label {
+  font-size: 1.25rem;
+}
+.filter {
+  font-size: 1.25rem;
+}
+
 input[type="submit"] {
-  padding: .25rem;
+  padding-top: .25rem;
+  padding-bottom: .3rem;
   background-color: #3D7FCF;
   border: 1px solid #3D7FCF;
   border-radius: 5px;
-  font-size: .75rem;
+  font-size: 1.25rem;
   color: white;
+  text-align: center;
+  display: inline;
+  vertical-align: middle;
 }
 
 /*********** PRODUCTS SECTION ***********/
@@ -58,19 +76,15 @@ section {
   padding: 0 .75rem;
 }
 
-.item-container img {
-  max-height: 20rem;
-}
-
 h2 {
   padding-top: 1.5rem;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   color: #2d2d2d;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   text-align: center;
   color: #2d2d2d;
 }
