@@ -1,48 +1,42 @@
-var cart = [
-  
-]
+//global variable for item names
+var cart = []
 
-var itemPrice = [
-  
-]
+//global variable for prices of items
+var itemPrice = []
 
-function cartPush(item){
+/* ***************************************************************************** */
+//function to update the cart array when onclick pases on parameter "item"
+function cartPush(item, price){
+  //see if item is already in cart
   var i = cart.indexOf(item)
-  
+  //if not, push item and price into "cart" and "itemPrice" array, respectively
   if(i == -1){
     cart.push(item);
-    console.log(cart.length + " added " + item);
+    console.log(cart.length + " items total. Added " + item);
+    
+    itemPrice.push(price);
+    console.log("$" + price + " added to total price");
   } else {
+    //if it is, splice item and price from "cart" and "itemPrice" array, respectively
     cart.splice(i, 1);
-    console.log(cart.length);
-  }
-}
-
-function cartInfo(){
-  console.log("Here's what's in your cart: " + cart);
-}
-
-//can't get this bit of code to work. it won't subtract when I need it to :(
-
-function pricePush(price){
-  var conversion = parseFloat(price);
-  
-  var p = itemPrice.indexOf(price)
-  
-  if(p == -1){
-    itemPrice.push(conversion);
-  } else {
-    itemPrice.splice(p, 1);
+    console.log(cart.length + " items total. Subtracted " + item);
+    
+    itemPrice.splice(i, 1);
+    console.log("$" + price + " subtracted from total price")
   }
   
-  console.log(conversion);
-  
+  // variable of sum to calculate total price of items in "itemPrice" array
   var sum = itemPrice.reduce(add, 0);
 
   function add(a, b){
     return a + b;
   }
   
-  console.log(sum);
+  console.log("Your total price in cart is $" + sum);
 }
 
+/* ***************************************************************************** */
+// tells us what items are in the "cart" array
+function cartInfo(){
+  console.log("Here's what's in your cart: " + cart);
+}
