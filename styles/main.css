@@ -70,6 +70,19 @@ input[type="submit"] {
   vertical-align: middle;
 }
 
+.cart-info {
+  float: right;
+  padding: .5rem 1rem;
+}
+
+#cartinfo {
+  clear: both;
+  float: right;
+  height: 10rem;
+  width: 25rem;
+  margin: auto;
+  font-size: 1.1rem;
+}
 /*********** PRODUCTS SECTION ***********/
 
 section {
@@ -94,6 +107,7 @@ h3 {
   flex-flow: row wrap;
   text-align: center;
   justify-content: center;
+  width: 100%;
   margin: auto;
 }
 
@@ -101,5 +115,5 @@ h3 {
   border: solid 1px black;
   width: 80%;
   margin: 2.5% 10%;
-  text-align: center;
+  
 }
