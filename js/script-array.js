@@ -1,5 +1,5 @@
 $(function () {
-  $('[data-toggle="popover"]').popover({trigger: 'hover click'});
+  $('[data-toggle="popover"]').popover({trigger: 'focus click'});
 })
 
 //global variable for item names
