@@ -84,7 +84,11 @@ input[type="submit"] {
 }
 
 .cart-container {
-  float: right;
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 2.5rem;
+  
 }
 
 .cart-info {
@@ -93,7 +97,7 @@ input[type="submit"] {
 }
 
 #cartinfo {
-  height: 10rem;
+  height: 17rem;
   width: 25rem;
   margin: auto;
   font-size: 1.1rem;
