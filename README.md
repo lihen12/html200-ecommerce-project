@@ -70,3 +70,116 @@ Each weekly assignment will be graded independently. There will not be a final g
 
 ## Testing
 [update this section with information about the testing steps you took to ensure site quality]
+
+User Research
+
+WHO
+
+Age and Age Groups
+  - 18-24 years old
+  - 35-55 years old
+  
+Personal Life-Style
+  - University Students
+  - Professionals
+  - Mothers
+  
+Gender
+  - Seems mostly female due to product choices (scarves)
+  - Can occasionaly be from males who are buying gifts
+  
+Langauge
+  - English 
+
+Education
+  - University
+  - Some college
+  - High school
+  
+Expectations
+  - Good mobile experience
+  - Personal engagement
+
+Web and Computer Experience
+  - High
+  - Medium
+
+_________________________________
+
+HOW
+
+On What Device
+  - Smartphone: Google Pixel, Samsung Galaxy S5-S7, Applie iPhone 3/4/4s/5/6/6s/7
+  - Tablet: Apple iPad Pro, Amazon Kindle Fire HD, Samsung Galaxy Tab 10
+  - Desktop/Notebook: 24", 20", 10"
+  
+Internet Connection Speed
+  - Standard broadband
+  - Mobile Service (3G and 4G)
+  - 2G
+  
+_________________________________  
+
+WHERE
+
+User's Location
+  - United States
+  - Urban
+  - Suburban
+  
+Place Where the Page is Read
+  - On the move
+  - At home
+  - At work
+  
+________________________________
+
+WHY
+
+Why Users Seek the Content
+  - To purchase a product
+  - Comparison, research, window-shopping
+  
+How they Found the Page
+  - Search functions
+  - Social media
+  - Word of mouth
+
+_______________________________
+
+TESTING
+
+Responsivity
+
+I used Responsive Design Checker to manually look at my webpage to look for anything off. On all of my devices, everything was working as intended as of now. However, before I would notice that the item-container would spill out of the border. Tested on Desktop, Tablet, and Mobile. 
+
+Used Mobile-Friendly Test by Google to determine if my webpage is mobile friendly, which it is!
+
+Also used WEBPAGETEST. From Dules, VA it took about 1 second. In terms of Bytes content, 66% of my file were images, 15% font, and the rest in the form of JS, CSS, HTML. 
+
+_______________________________
+
+Desktop Testing
+
+24" Screen 
+  - Renders very well, but left side of text area not showing. I could increase the size of everything as I have a lot of margin that is unused. May be hard to see on Desktop. 
+
+20" Screen
+  - Everything works well. I like how everything is sized here compared to the 24" screen. 
+  
+10" Notebook
+  - Seems like my last item is taking up the wrong amount of space. It's too large compared to other items. May need to take a look at the bootstrap markup or css queries. 
+  
+Tablet Testing 
+
+Apple Ipad Pro 
+  - Renders very well. I like the size of everything and it is easy to see and read. 
+
+Samsung Galaxy Tab 10, Amazon Kindle Fire HD
+  - Did not know that the Tablet size was this small. 3 items per row makes things hard to read. May need to change it to 2 items per row using media queries. 
+
+Smartphones
+
+ALL phones
+  - Renders very well. I built my webpage to work well with mobile-first. On all sizes, the functionality and readability is good. 
+  
